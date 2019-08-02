@@ -23,7 +23,7 @@
 5-1. 모듈이 안생기고 에러가난 경우
 # npm update 
 이후 다시 
-# yarn eject
+# yarn eject (x) -> # yarn
 
 6. 리액트 시작
 # yarn start

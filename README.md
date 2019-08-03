@@ -1,7 +1,8 @@
 # React Demos
 
 ## 참고
-* <a>https://velopert.com/reactjs-tutorials</a>
+* 블로그 : <a>https://velopert.com/reactjs-tutorials</a>
+* Youtube : <a>https://www.youtube.com/watch?v=GEoNiUcVwjE&list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC&index=1</a>
 
 ### 터미널로 git 연동하기
 ```

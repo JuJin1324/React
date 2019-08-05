@@ -1,68 +1,12 @@
 # React Demos
 
-## 참고
-* 블로그 : <a>https://velopert.com/reactjs-tutorials</a>
-* Youtube : <a>https://www.youtube.com/watch?v=GEoNiUcVwjE&list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC&index=1</a>
+## 튜토리얼
+* [블로그](https://velopert.com/reactjs-tutorials)
+* [Youtube](https://www.youtube.com/watch?v=GEoNiUcVwjE&list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC&index=1)
 
 ### 터미널로 git 연동하기
-```
-1. git의 파일을 넣을 디렉토리 생성
-예시) # mkdir ~/dev/workspace-react
-
-2. 리액트파일 넣을 디렉토리로 이동
-예시) # cd ~/dev/workspace-react
-
-3. 이동한 디렉토리에서 깃 초기화
-# git init
-
-4. 외부저장소(GitHub)에서 소스가져오기
-# git pull https://github.com/JuJin1324/React-demos.git
-
-5. 리액트 프로젝트로 이동 후 nodejs 모듈 가져오기
-예시) # yarn eject
-
-5-1. 모듈이 안생기고 에러가난 경우
-# npm update 
-이후 다시 
-# yarn
-
-5-2. visual studio code 사용시 소스코드 열기(현재 경로에서 사용)
-# code .
-
-6. 리액트 시작
-# yarn start
-```
+[터미널로 git 연동하기](https://github.com/JuJin1324/React-demos/wiki/%ED%84%B0%EB%AF%B8%EB%84%90%EB%A1%9C-git-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
 
 ### Component LifeCycle API
-![스크린샷 2019-08-03 오후 9 46 24](https://user-images.githubusercontent.com/16306672/62412537-1dc2a080-b63f-11e9-890e-893ec758d3ef.png)
+[Component LifeCycle API](https://github.com/JuJin1324/React-demos/wiki/Component-LifeCycle-API)
 
-* constructor
-  * 컴포넌트가 처음 만들어질 때 실행
-  * 기본 state 설정할 수 있음
-
-* componentWillMount
-  * 컴포넌트가 DOM 위에 만들어지기 전에 실행
-
-* componentDidMount
-  * 첫 render 함수 이후 실행
-  * 여기서 다른 javascript framework 연동 
-  * setTimeout, setInterval 및 Ajax 사용
-  * DOM 처리
-
-* componentWillReceiveProps
-  * props를 받을 때 실행
-  * props 에 따라 setState로 state를 업데이트하기 유용
-
-* shouldComponentUpdate
-  * props/state 가 변경되었을 때 return true 혹은 false 로 리렌더링 여부를 정한다.
-
-* componentWillUpdate
-  * 컴포넌트가 업데이트되기 전에 실행
-  * ※ 주의) 여기서는 setState를 절대 사용하지 않는다.(무한루프에 빠지게 된다)
-
-* componentDidUpdate
-  * 컴포넌트가 리렌더링을 마친 후 실행
-  * ※ 주의) 여기서는 setState를 절대 사용하지 않는다.(무한루프에 빠지게 된다)
-
-* componentWillUnmount
-  * 컴포넌트가 DOM 에서 사라진 후 실행

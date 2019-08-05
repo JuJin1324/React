@@ -26,7 +26,7 @@
 이후 다시 
 # yarn
 
-5-2. visual studio code 사용시 소스코드 열기
+5-2. visual studio code 사용시 소스코드 열기(현재 경로에서 사용)
 # code .
 
 6. 리액트 시작

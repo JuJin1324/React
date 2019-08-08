@@ -1,30 +1,20 @@
-# React Demos
-
-## 참고
-* <a>https://velopert.com/reactjs-tutorials</a>
+# React 시작하기
 
 ### 터미널로 git 연동하기
-```
-1. git의 파일을 넣을 디렉토리 생성
-예시) # mkdir ~/dev/workspace-react
+* Wiki - [터미널로 git 연동하기](https://github.com/JuJin1324/React-demos/wiki/%ED%84%B0%EB%AF%B8%EB%84%90%EB%A1%9C-git-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
 
-2. 리액트파일 넣을 디렉토리로 이동
-예시) # cd ~/dev/workspace-react
+### 강좌
+* 블로그 - [튜토리얼 : React.JS 강좌 목록](https://velopert.com/reactjs-tutorials)
+* Youtube - [튜토리얼 : React.js 강좌 시리즈](https://www.youtube.com/watch?v=GEoNiUcVwjE&list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC&index=1)
+* Wiki - [Component LifeCycle API](https://github.com/JuJin1324/React-demos/wiki/Component-LifeCycle-API)
+* 블로그 - [리액트의 Hooks 완벽 정복하기](https://velog.io/@velopert/react-hooks)
+* 블로그 - [다양한 방식의 리액트 컴포넌트 스타일링 방식 CSS, Sass, CSS Module, styled-components](https://velog.io/@velopert/react-component-styling)
+* 블로그 - [React 커링 및 HOC(Higher Order Component) - 확장성을 고려한 React 컴포넌트](https://velog.io/@kyusung/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B5%90%EA%B3%BC%EC%84%9C-%ED%99%95%EC%9E%A5%EC%84%B1%EC%9D%84-%EA%B3%A0%EB%A0%A4%ED%95%9C-React-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8)
+* 블로그 - [Flux로의 카툰 안내서](http://bestalign.github.io/2015/10/06/cartoon-guide-to-flux/)
+* 블로그 - [Redux로의 카툰 안내서](http://bestalign.github.io/2015/10/26/cartoon-intro-to-redux/)
 
-3. 이동한 디렉토리에서 깃 초기화
-# git init
+### VSCode React 플러그인
+* 블로그 - [리액트 프로젝트에 ESLint 와 Prettier 끼얹기](https://velog.io/@velopert/eslint-and-prettier-in-react)
 
-4. 외부저장소(GitHub)에서 소스가져오기
-# git pull https://github.com/JuJin1324/React-demos.git
-
-5. 리액트 프로젝트로 이동 후 nodejs 모듈 가져오기
-예시) # yarn eject
-
-5-1. 모듈이 안생기고 에러가난 경우
-# npm update 
-이후 다시 
-# yarn eject (x) -> # yarn
-
-6. 리액트 시작
-# yarn start
-```
+### Chrome Extension
+* [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)

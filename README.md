@@ -14,6 +14,7 @@
 * 블로그 - [Flux로의 카툰 안내서](http://bestalign.github.io/2015/10/06/cartoon-guide-to-flux/)
 * 블로그 - [Redux로의 카툰 안내서](http://bestalign.github.io/2015/10/26/cartoon-intro-to-redux/)
 * 공식사이트 - [Render Props](https://ko.reactjs.org/docs/render-props.html)
+* 블로그 - [리액트 코드 스플리팅](https://velog.io/@velopert/react-code-splitting)
 
 ### VSCode React 플러그인
 * 블로그 - [리액트 프로젝트에 ESLint 와 Prettier 끼얹기](https://velog.io/@velopert/eslint-and-prettier-in-react)

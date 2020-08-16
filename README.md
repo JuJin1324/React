@@ -29,6 +29,9 @@ git clone 으로 땡겨온 React 프로젝트 설정하기
 3. Command 항목에는 `run`, Scripts 항목에는 `start` 입력 후 Apply 버튼을 눌러 저장
 4. 실행  
 
+## JSX
+JSX는 자바스크립트 문법의 확장판. HTML + javascript 를 사용하도록 도와준다.
+
 ## 강좌
 * [튜토리얼 : React.JS 강좌 목록](https://velopert.com/reactjs-tutorials)
 * [튜토리얼 : React.js 강좌 시리즈](https://www.youtube.com/watch?v=GEoNiUcVwjE&list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC&index=1)

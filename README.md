@@ -32,6 +32,57 @@ git clone 으로 땡겨온 React 프로젝트 설정하기
 ## JSX
 JSX는 자바스크립트 문법의 확장판. HTML + javascript 를 사용하도록 도와준다.
 
+## javascript bind
+javascript 함수에서 this 를 사용하는 경우 this는 기본적으로 Window 객체로 동작한다.   
+this 를 내가 원하는 객체로 맵핑 시키는 것이 bind 함수이며 다음 링크를 참조하자. 
+[binding의 개념과 call, apply, bind의 차이점](https://wooooooak.github.io/javascript/2018/12/08/call,apply,bind/)
+
+### React 에서 bind
+React 클래스 내부의 메서드에서 this 를 사용하는 경우 기본적으로 this에 아무것도 맵핑되어 있지 않다.
+직접 아래의 코드를 복붙해서 실행시키고 크롬 브라우저에서 실행 이후 F12를 눌러 개발자도구에서 console을 보면 undefined 라고 찍힐 뿐이다.
+```javascript
+class EventHandling extends Component {
+    constructor(props) {
+        super(props);
+    }
+    handleClick() {
+        console.log(this);
+    }
+    render() {
+        return (
+            <div>
+                <button onClick={this.handleClick}>버튼</button>
+            </div>
+        );
+    }
+}
+
+function App() {
+    return (
+        <div id="root">
+            <EventHandling/>
+        </div>
+    );
+}
+...
+``` 
+this 를 클래스 자신으로 바인딩 하기 위해서는 위의 handleClick 메서드를 다음처럼 화살표 함수로 선언을 하거나,
+```javascript
+    handleClick = () => {
+        console.log(this);
+    }
+```
+혹은 constructor 부분에서 bind 함수를 통해서 해당 함수에 클래스 자신을 직접 바인딩한다.
+```javascript
+constructor(props) {
+    super(props);
+    this.state = {
+        isToggleOn: true
+    }
+    this.handleClick = this.handleClick.bind(this);
+}
+```
+
 ## 강좌
 * [튜토리얼 : React.JS 강좌 목록](https://velopert.com/reactjs-tutorials)
 * [튜토리얼 : React.js 강좌 시리즈](https://www.youtube.com/watch?v=GEoNiUcVwjE&list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC&index=1)
